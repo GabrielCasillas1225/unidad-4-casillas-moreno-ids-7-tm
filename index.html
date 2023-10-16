@@ -1,40 +1,63 @@
-/* styles.less */
-@primary-color: #CC76FA;
-@label-color: #28EB18;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>bootstrap</title>
+    <style>
 
-body {
-  background-color: @primary-color;
-}
+        body {
+            background-color: #D7DBDDed;
+            }
+        
+        .container .tamanioimg{
+            height: 300px;
+            width: 500px;
+        }
 
-h1 {
-  color: @label-color;
-}
-
-.container .correoelectronico{
-  color: @label-color;  
-}
-
-.container .contrasena{
-  color: @label-color;  
-}
+        .container .tamaniologo{
+            height: 100px;
+            width: 100px;
+        }
 
 
-.container .opcion1{
-  background-color: blue;
-}
+            
+    </style>
+</head>
+<body>
 
-.container .opcion2{
-  background-color: green;
-}
+    <div class="container">
 
-.container .opcion3{
-  background-color: #22BEDD;
-}
+        <div class="row mt-5 ">
 
-.container .opcion4{
-  background-color: darkgoldenrod;
-}
+            
+            <img class="tamanioimg " src="./assets/trabajo.jpg" alt="trabajo" />
+            
+            <div class="col-6">
+                <img class="tamaniologo " src="./assets/logo.jpg" alt="logo" />
+                <br>    
 
-.container .opcion5{
-  background-color: #F9674D;
-}
+                <label for="Correo">Correo Electrónico</label>
+                <input type="text" class="form-control" id="Correo" placeholder="Correo Electronico">
+                
+                <label for="Correo">Contraseña</label>
+                <input type="text" class="form-control" id="contrasena" placeholder="Contraseña">
+
+                <button type="button" class="btn btn-primary mt-2">Login</button>
+            </div>
+
+            
+
+
+        </div>
+
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
